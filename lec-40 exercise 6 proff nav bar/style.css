@@ -1,0 +1,188 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+:root{
+    --butcolor: rgb(248, 192, 128);
+    --ulcolor: yellowgreen;
+    --boxbg: rgb(251, 244, 216);
+}
+.logo img{
+    /* border: 2px solid black; */
+    height: 70px;
+    width: 210px;
+    /* background-color: red; */
+}
+.right ul{
+    display: flex;
+    gap: 15px;
+   
+align-items: center;
+}
+.right ul li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    cursor: pointer;
+}
+.right ul li a:hover{
+    color: var(--ulcolor);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    border: 2px;
+    height:180px; 
+    width: 200px;
+    background-color: var(--boxbg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.box a{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--butcolor);
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: black;
+}
+main{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    justify-items: center;
+}
+.box a:hover{
+    background-color: var(--boxbg);
+    color: var(--butcolor);
+}
+body{
+    background-color: #1a4c032a;
+}
+/* .box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.box1 a{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--butcolor);
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: black;
+}
+.box1 button{
+    height: 25px;
+    width:80px;
+    background-color: var(--butcolor);
+    border-radius: 6px;
+} 
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.box2 a{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--butcolor);
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: black;
+}
+.box2 button{
+    height: 25px;
+    width:80px;
+    background-color: var(--butcolor);
+    border-radius: 6px;
+} 
+.box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.box3 a{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--butcolor);
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: black;
+}
+.box3 button{
+    height: 25px;
+    width:80px;
+    background-color: var(--butcolor);
+    border-radius: 6px;
+} 
+.box4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.box4 a{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--butcolor);
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: black;
+}
+.box4 button{
+    height: 25px;
+    width:80px;
+    background-color: var(--butcolor);
+    border-radius: 6px;
+}  
+.box5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.box5 a{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--butcolor);
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: black;
+}
+.box5 button{
+    height: 25px;
+    width:80px;
+    background-color: var(--butcolor);
+    border-radius: 6px;
+}  
+.box6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.box6 a{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--butcolor);
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: black;
+}
+.box6 button{
+    height: 25px;
+    width:80px;
+    background-color: var(--butcolor);
+    border-radius: 6px;
+} */

@@ -1,0 +1,45 @@
+/* .box:first-child{
+    background-color: pink;
+}*/
+.box:first-line{
+    color: yellow;
+}
+.boxes *{
+    color: orangered;
+    border: 2px solid palevioletred;
+    margin: 2px;
+}
+/* attribute selector */
+[data-color="primary"]{
+    margin-top: 45px;
+}
+.box, [data-color="primary"]{
+    margin-top: 45px;
+}
+.box:nth-child(even){
+    background-color: blue;
+}
+.boxes::before{
+    content: "hello boi";
+    color: blue;
+}
+.box::after{
+    content: " ching-chao";
+    background-color: rgb(127, 11, 30);
+}
+.boxes::selection{
+    /* only for class */
+}
+::selection{
+    /* for overall page */
+    color: aqua;
+    background-color: black;
+}
+.box::first-letter{
+    font-size: 45px;
+    color: black;
+}
+input::placeholder{
+    color: purple;
+    font-size: large;
+}

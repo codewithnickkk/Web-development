@@ -1,0 +1,67 @@
+.box {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    transform: rotate(40deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid purple;
+    height: 60vh;
+    width: 60vw;
+}
+
+.box1 {
+    border: 2px solid orangered;
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    transform: rotateX(32deg) rotateY(2.299999999turn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    border: 2px solid orangered;
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    transform: scale(0.5);
+    /*scaleY(2) scaleZ(2)
+    transform: scale3d(3);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box3 {
+    border: 2px solid orangered;
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    transform: skew(5deg);
+    /*scaleY(2) scaleZ(2)*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box4 {
+    border: 2px solid orangered;
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    transform: translateX(34%)
+        /* shifts object  */
+        skewX(40deg);
+    /* space dalke multiple transforms use kr sakte hai */
+    /*scaleY(2) scaleZ(2)*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

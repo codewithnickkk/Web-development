@@ -1,0 +1,64 @@
+* {
+    margin: 2px;
+    padding: 2px;
+}
+
+.items {
+    height: 40px;
+    width: 40px;
+    border: 2px solid violet;
+    margin: 2px;
+    background-color: violet;
+}
+
+.container {
+    border: 2px solid yellowgreen;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container2 {
+    border: 2px solid yellowgreen;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    border: 2px solid yellowgreen;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-content: center;
+/*  align-items: center;
+ */ flex-direction: column;
+    flex-wrap: wrap;
+}
+/* align item is used when single line is present in flexbox */
+/* align content is used when we have multiple lines in flexbox */
+.container4 {
+    border: 2px solid yellowgreen;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+/*     gap: 20px;
+ */    column-gap:10px ;
+    row-gap: 10px;
+}
+.container5 {
+    border: 2px solid yellowgreen;
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.item1{
+/*     flex-grow: 2;
+ flex-shrink: 2;*/
+    align-self: flex-end
+}

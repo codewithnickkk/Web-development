@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid-area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                 "side article article"
+                                 "footer footer footer" ;
+            border: 2px solid black;
+            grid-template-columns: repeat(3, 1fr) ;/* repeat function */
+/*             gap: 10px;
+ */            row-gap: 5px;
+            column-gap: 20px;
+            height: 100vh;
+            align-items: center;
+            justify-items: center;
+            
+
+        }
+        .item{
+            border: 2px solid red;
+            height:30px/* 30vh */;
+            width: 30px;
+        }
+        .i1{
+            grid-area: nav;
+            background-color: #ff9317;
+/*             height: 15vh;
+ */        }
+        .i2{
+            grid-area: side;
+            background-color: #354cfc;
+        }
+        .i3{
+            grid-area: article;
+            background-color: #fff;
+        }
+        .i4{
+            grid-area: footer;
+            background-color: #13f826;
+        }
+        .i5{
+            grid-area: nav; /* this can overlap */
+            background-color: #ff343481;
+/*             height: 15vh;
+ */        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+    </div>
+</body>
+</html>

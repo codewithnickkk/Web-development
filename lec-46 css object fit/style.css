@@ -1,0 +1,40 @@
+.container {
+    border: 2px solid blanchedalmond;
+    height: 200px;
+    width: 200px;
+}
+
+.container img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.container1 img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.container2 img {
+    height: 200px;
+    width: 200px;
+    object-fit: fill;
+}
+
+.container3 img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 10px 20px;
+    /* object-position: top, bottom right, right ,top right/left */
+}
+
+.container4 {
+    border: 2px solid blanchedalmond;
+    height: 200px;
+    width: 200px;
+    background-position: bottom right;
+    background-repeat: none;/* used for small images which if not fitted then they repeat itself to cover the bg  */
+    background-image:url(https://www.anime-planet.com/images/characters/inage-58467.jpg) ;
+}

@@ -1,0 +1,19 @@
+.cards{
+    border: 2px solid black;
+    display: flow-root; 
+    /*overflow: auto; can be used*/
+}
+
+img{
+        float: right;
+    }
+.helo{
+    float: left;
+}
+.card{
+    border: 2px solid red;
+}
+.cards :nth-child(3){
+    background-color: rgb(162, 238, 238);
+    clear: both;
+}

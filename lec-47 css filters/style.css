@@ -1,0 +1,11 @@
+.img1{
+    filter: blur(3px);
+}
+.img2{
+    filter: contrast(10) brightness(10);
+}
+.img3{
+    filter: invert();
+    filter: ;
+}
+/* many more chages can be done eg opacity/dropshadow/grayscle/etc.... */
