@@ -1,0 +1,28 @@
+body{
+    background-color: orangered;
+}
+@media only screen and (max-width:400px) {/* it can be min-width acc..ly */
+    body{
+        background-color: yellow;
+    }
+    .boxes{
+        flex-direction: column-reverse;
+    }
+
+}
+/* @media screen and (orientation :portrait) { */
+    .boxes{
+        border: 2px solid black;
+    }
+/* }*/
+.box{
+    border: 2px solid yellowgreen;
+    background-color: yellowgreen;
+    height: 233px;
+    width: 233px;
+    margin: 10px;
+    /* display: flex; */
+}
+.boxes{
+    display: flex;
+}

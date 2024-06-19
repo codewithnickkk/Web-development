@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            height: 50vh;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+        }
+        .box1{
+            background-color: yellow;
+            position: sticky;
+            height: 30px;
+            width: 100vw;
+            top: 0px;
+            right: 40px;
+            margin: 0px;
+            padding: 0px;
+            z-index: 2;
+            
+
+            
+        }
+        .box2{
+            background-color: rebeccapurple;
+            position: relative;
+            z-index:1;
+        }
+        .box3{
+            background-color: orangered;
+            position: fixed;
+
+            top: 15px;
+            left: 20px;
+        }
+        .box4{
+            background-color: aquamarine;
+        }
+        .outline{
+            border: 2px solid red;
+            margin: 20px;
+            padding: 20px;
+            
+        }
+        /*initially the position is static by using position property as relative we can overlap things(right left top bottom)*/
+
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <p class="box box1"></p>
+        <p class="box box2"></p>
+        <p class="box box3"></p>
+        <p class="box box4"></p>
+    </div>
+</body>
+</html>

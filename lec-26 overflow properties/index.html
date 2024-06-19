@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow css</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            height: 20vh;
+            width: 50vw;
+            overflow: scroll;
+        }
+
+        .box2 {
+            border: 2px solid black;
+            height: 20vh;
+            width: 50vw;
+            overflow: auto;
+            /* auto will add scroll bar only if needed whereas overflow scroll will always show scroll bar even if it isn't overflowing */
+            overflow-x: hidden;
+            overflow-y: scroll-behavior;
+            /*these two lines can be written as overflow : auto hidden where x axis is auto and y is hidden or vice versa*/
+        }
+
+        .div {
+            border: 2px solid black;
+            height: 20vh;
+            width: 50vw;
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias atque, dignissimos quia obcaecati,
+             enim earum tempora similique, quam doloremque quae voluptatibus optio quisquam adipisci quaerat veniam
+              dolor est error quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cum dolor impedit. Cum, error ullam labore natus dolore, expedita ipsum facere libero commodi architecto est id, autem veniam eligendi provident.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore itaque cum. Quia distinctio,
+            cumque accusantium sed, dolorem voluptatum fugiat autem tempora itaque repudiandae repellat, veniam ea
+            explicabo vel praesentium quaerat atque. Quis, quidem odio, eos dolorum fugiat ratione magnam sed eum
+            dolores ad architecto error sapiente accusantium inventore repellendus!
+        </p>
+        <p class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore itaque cum. Quia distinctio,
+            cumque accusantium sed, dolorem voluptatum fugiat autem tempora itaque repudiandae repellat, veniam
+            rggrgrgrgqerggqrgqrgrrgrgrgqntium inventore repellendus!
+        </p>
+    </div>
+    <div class="div">
+        <p1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis sed quis doloremque nesciunt quas
+            voluptatibus recusandae, nobis quia dolores voluptas illo ea, repellat odit voluptates obcaecati dicta
+            deleniti? Maiores libero provident saepe sit quod.
+        </p1>
+    </div>
+</body>
+
+</html>
