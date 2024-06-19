@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing</title>
+</head>
+<style>
+    * {
+        /*this is universal selector*/
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 2px solid black;
+        width: 400px;
+        background-color: rgb(128, 144, 139);
+        box-sizing: border-box;
+    }
+
+    .box1 {
+        border: 2px solid black;
+        width: vw;
+        background-color: aquamarine;
+        box-sizing: border-box;
+    }
+
+    .box2 {
+        border: 2px solid black;
+        width: 80vw;
+        height: 80vh;
+        background-color: aquamarine;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    p1{
+        font-size: 2em;
+    }
+</style>
+
+<body>
+    <div>
+        <p class="box">This is a box</p>
+    </div>
+    <div>
+        <p>
+            This box is not responsive
+        </p>
+
+    </div>
+    <div>
+        <p class="box1">This is a box</p>
+    </div>
+    <div>
+        <p>
+            now making this box responsive using viev port width (vw)
+        </p>
+
+    </div>
+    <div>
+        <p class="box2">This is a box</p>
+    </div>
+    <div>
+        <p>
+            now making this box 80% of screen (responsive) & margin auto to make it center also using vh (view port
+            height) 80%
+        </p>
+
+    </div>
+    <P1>there r many sizing units such as em, rem, etc. here we make the size of font 2em which means 2 times the actual font. </P1>
+</body>
+
+</html>
